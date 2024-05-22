@@ -13,8 +13,8 @@
 				font-size: 1em; /*change calendarIcon size */
 				display: block;
 				position: relative;
-				width: 10em;
-				height: 10em;
+				width: 6.7em;
+				height: 6.7em;
 				background-color: #fff;
 				border-radius: 0.7em;
 				-moz-border-radius: 0.7em;
@@ -25,7 +25,7 @@
 			div.calendarDate * {
 				display: block;
 				width: 100%;
-				font-size: 1.4em;
+				font-size: 1em;
 				font-weight: bold;
 				font-style: normal;
 				text-align: center;
@@ -45,12 +45,12 @@
 				bottom: 0em;
 				color: #fff;
 				padding-top: 0.2em;
-				height: 1.6em;
+				height: 1.5em;
 				background-color: #fd9f1b;
 			}
 			div.calendarDate span {
-				font-size: 4.5em;
-				padding-top: 0.45em;
+				font-size: 3em;
+				padding-top: 0.5em;
 				color: #2f2f2f;
 			}
 		</style>
@@ -60,7 +60,7 @@
 		<div class="calendarDate">
 			<em id="day"></em>
 			<strong id="month"></strong>
-			<span id="date,1">22</span>
+			<span id="date"></span>
 		</div>
         <script>
 			function dispalyDate(today) {
@@ -73,7 +73,7 @@
 				var date = today.getDate();
 				document.getElementById("day").innerHTML = dayName;
                 document.getElementById("month").innerHTML = monthName;
-                document.getElementById("date1").innerHTML = date;
+                document.getElementById("date").innerHTML = date;
 			}
 
 			dispalyDate();
